@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# This script connects to my ALU server using the private key school
+ssh -i ~/.ssh/school ubuntu@44.202.4.129
