@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>404 - Page Not Found</title>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0f0f1a;
+    color: #eee;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+  }
+  .container {
+    animation: fadeIn 1s ease-in;
+  }
+  h1 {
+    font-size: 8rem;
+    margin: 0;
+    color: #7f5af0;
+    text-shadow: 0 0 20px #7f5af0;
+  }
+  p {
+    font-size: 1.4rem;
+    color: #aaa;
+  }
+  .french {
+    font-style: italic;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-top: 20px;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>404</h1>
+    <p>Oops! This page took a wrong turn.</p>
+    <p class="french">Ceci n'est pas une page</p>
+  </div>
+</body>
+</html>
