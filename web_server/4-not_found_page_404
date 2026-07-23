@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# This script installs Nginx and configures a custom 404 page
+apt-get update
+apt-get install -y nginx
+echo "Ceci n'est pas une page" > /var/www/html/404.html
+sed -i '0,/server_name _;/s||server_name _;\n\n\terror_page 404 /404.html;|' /etc/nginx/sites-available/default
+service nginx restart
+
